@@ -36,6 +36,12 @@ function main() {
         input.value = "";
     }
 
+    addEventListener("keyup", submited = (a) => {
+        if(a.key === "Enter"){
+            handleSubmit();
+        }
+    });
+
 socket.on('display message', handleMessage);
 } 
 
